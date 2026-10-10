@@ -85,8 +85,8 @@ resolution from `static.wixstatic.com` once network access allows it. No video f
 | Wix feature | Where | Preliminary replacement |
 |---|---|---|
 | Wix Forms (registration, subscribe) | `/apply`, `/register`, `/form`, footer? | Form service (e.g. Netlify Forms / Formspree) or serverless function + email |
-| Wix Forms & Payments / Wix Invoices | `/pay-now` likely | Stripe Payment Link or Stripe Checkout |
-| Wix Hotels | unknown — needs check | Possibly unused; confirm |
+| Wix Forms & Payments / Wix Invoices | `/pay-now` — **confirmed in active use** by the owner | Stripe Payment Link or Stripe Checkout (must be implemented and tested before migration) |
+| Wix Hotels | **Not used** (confirmed by owner) | None — do not rebuild |
 | Velo custom code | unknown pages | Must inspect behaviour on live site |
 | Blog pages | `/blog`, `/blog-page`, `/women-entrepreneurship-blog` (all noindex) | Static pages / Markdown |
 | Contacts/CRM, newsletter list | form submissions | Export contacts; choose email tool |
