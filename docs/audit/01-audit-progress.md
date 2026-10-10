@@ -91,6 +91,17 @@ resolution from `static.wixstatic.com` once network access allows it. No video f
 | Blog pages | `/blog`, `/blog-page`, `/women-entrepreneurship-blog` (all noindex) | Static pages / Markdown |
 | Contacts/CRM, newsletter list | form submissions | Export contacts; choose email tool |
 
+## Payments (/pay-now) — owner-confirmed details
+
+- In active use. Payments are processed by **Stripe, into the owner's own Stripe account** (connected to Wix).
+- **Amount varies according to a discount code** the payer enters.
+- Related: the Registration Form also has an optional "Promotional Code" field.
+- Still to verify on the live page: base price(s), currency display, wording, what fields the payer fills in,
+  where the discount codes are defined today (Wix coupons vs Stripe promotion codes), and the post-payment page.
+- Preliminary replacement: a **Stripe Payment Link or Stripe Checkout with promotion codes enabled**.
+  Stripe applies the discount itself, so the site needs no server or database. Existing discount codes would be
+  recreated as Stripe promotion codes. Must be tested end to end before migration.
+
 ## Blockers
 
 1. **Live site unreachable from this environment.** The cloud environment's network policy denies
